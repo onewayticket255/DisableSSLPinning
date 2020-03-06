@@ -1,0 +1,28 @@
+entry = {
+  bundle = AppList;
+  cell = PSLinkCell;
+  icon = "/Library/PreferenceLoader/Preferences/sslpinning.png";
+  isController = 1;
+  label = SSLPinning;
+  ALSettingsPath = "/var/mobile/Library/Preferences/mlyx.sslpinning.plist";
+  ALSettingsKeyPrefix = "SSLPinningEnabled-";
+  ALSettingsDefaultValue = 0;
+  ALSectionDescriptors = (
+  	
+  	{
+  	  title = "User Applications";
+  	  predicate = "(isSystemApplication = FALSE)";
+  	  "cell-class-name" = "ALSwitchCell";
+  	  "icon-size" = 29;
+  	  "suppress-hidden-apps" = 1;
+  	  
+  	},
+  	{
+  	  title = "System Applications";
+  	  predicate = "(isSystemApplication = TRUE)";
+  	  "cell-class-name" = "ALSwitchCell";
+  	  "icon-size" = 29;
+  	  "suppress-hidden-apps" = 1;
+  	}
+  );
+};

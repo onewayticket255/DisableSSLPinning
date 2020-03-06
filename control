@@ -1,0 +1,9 @@
+Package: mlyx.sslpinning
+Name: SSLPinning
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: MITM in iOS13 ARM64e
+Maintainer: mlyx
+Author: mlyx
+Section: Tweaks
